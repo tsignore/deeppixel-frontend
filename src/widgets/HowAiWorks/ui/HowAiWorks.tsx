@@ -31,7 +31,7 @@ export const HowAiWorks: React.FC<HowAiWorksProps> = ({ className }) => {
             </div>
             <div className={styles.blocksItem}>
               <h3>03</h3>
-              <p>Click "Generate" and get a ready image in seconds</p>
+              <p>Click &quot;Generate&quot; and get a ready image in seconds</p>
             </div>
             <div className={styles.blocksItem}>
               <h3>04</h3>

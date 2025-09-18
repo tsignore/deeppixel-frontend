@@ -22,7 +22,7 @@ interface AdvantagesProps {
 export const Advantages: React.FC<AdvantagesProps> = ({ className }) => {
   return (
     <Container>
-      <div className={styles.Advantages}>
+      <div className={clsx(styles.Advantages, className)}>
         <div className={styles.innerAdvantages}>
           <div className={styles.advantagesTop}>
             <Image

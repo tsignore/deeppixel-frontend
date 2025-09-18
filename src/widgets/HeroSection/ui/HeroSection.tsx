@@ -13,6 +13,7 @@ import hero5Image from "@/shared/assets/images/hero5.png";
 import hero6Image from "@/shared/assets/images/hero6.png";
 import { Container } from "@/shared/ui/Container/Container";
 import { WhiteLine } from "@/shared/ui/WhiteLine/WhiteLine";
+import Link from "next/link";
 
 export const HeroSection = () => {
   const words = ["Anime", "Animals", "Nature", "Food", "Architecture"];
@@ -24,7 +25,7 @@ export const HeroSection = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <section className={clsx(styles.HeroSection)}>
@@ -71,9 +72,9 @@ export const HeroSection = () => {
               Sign up
             </Button>
           </div>
-          <a href="/" className={styles.login}>
+          <Link href="/" className={styles.login}>
             Do you want to generate an image? <span>Login</span>
-          </a>
+          </Link>
         </div>
       </Container>
       <div className={styles.decorations}>

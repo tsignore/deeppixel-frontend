@@ -10,7 +10,6 @@ import image6 from "@/shared/assets/images/arc/image6.png";
 import image7 from "@/shared/assets/images/arc/image7.png";
 import Image from "next/image";
 import { Container } from "@/shared/ui/Container/Container";
-import { WhiteLine } from "@/shared/ui/WhiteLine/WhiteLine";
 
 interface ArcOfImagesProps {
   className?: string;

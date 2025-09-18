@@ -1,4 +1,4 @@
-import { FC, ButtonHTMLAttributes, ReactNode, memo } from "react";
+import { FC, ButtonHTMLAttributes, ReactNode } from "react";
 import cls from "./Button.module.scss";
 import clsx from "clsx";
 
@@ -17,7 +17,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   rainbow?: boolean;
 }
 
-export const Button: FC<ButtonProps> = memo((props) => {
+export const Button: FC<ButtonProps> = (props) => {
   const {
     className,
     variant = "clear",
@@ -44,4 +44,4 @@ export const Button: FC<ButtonProps> = memo((props) => {
       {children}
     </button>
   );
-});
+};

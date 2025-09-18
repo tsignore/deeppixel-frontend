@@ -9,6 +9,7 @@ import SquiggleImage from "@/shared/assets/images/squiggle.svg";
 import AngrySmileImage from "@/shared/assets/images/angrySmile.svg";
 import { Button } from "@/shared/ui/Button/Button";
 import MenuIcon from "@/shared/assets/images/menu.png";
+import Link from "next/link";
 
 interface HeaderProps {
   className?: string;
@@ -20,9 +21,9 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <Container maxWidth="1280px">
       <header className={clsx(styles.Header, className)}>
-        <a href="/">
+        <Link href="/">
           <Image className={styles.logoImage} src={Logo} alt="logo" />
-        </a>
+        </Link>
         <div className={styles.HeaderCenter}>
           <ul className={clsx(styles.menu, menuOpen && styles.menuOpen)}>
             <li>
