@@ -1,0 +1,131 @@
+.innerHowAiWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whiteLine {
+  max-width: 520px;
+  margin: 20px auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-basier);
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--text-dark-blue-color);
+
+  span {
+    font-family: var(--font-junicode);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.25rem;
+    line-height: 120%;
+    letter-spacing: -1.563px;
+
+    background: var(--rainbow-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+.blocks {
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.blocksItem {
+  border: 1px solid var(--stroke-color);
+  border-radius: 16px;
+  padding: 16px;
+  flex: 1;
+  min-height: 140px;
+
+  h3 {
+    width: fit-content;
+    font-family: var(--font-junicode);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    background: var(--rainbow-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  p {
+    font-family: var(--font-switzer);
+    font-weight: 500;
+    font-size: var(--font-size-s);
+    line-height: 120%;
+    color: #2c2c2c;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.text {
+  font-family: var(--font-switzer);
+  font-weight: 500;
+  font-size: var(--font-size-s);
+  line-height: 120%;
+  text-align: center;
+  color: var(--text-blue-color);
+  max-width: 650px;
+  margin-top: 15px;
+}
+
+@media (max-width: 750px) {
+  .blocks {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .whiteLine {
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+
+    span {
+      font-size: 2.188rem;
+    }
+  }
+
+  .blocks {
+    margin-top: 24px;
+  }
+
+  .text {
+    font-size: var(--font-size-xs);
+  }
+}

@@ -1,0 +1,22 @@
+.WhiteLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--white-color);
+  padding: 6px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 1 rgba(0, 0, 0, 0.1);
+
+  p {
+    font-size: var(--font-size-s);
+    color: var(--text-blue-color);
+  }
+}
+
+@media (max-width: 750px) {
+  .WhiteLine {
+    p {
+      font-size: var(--font-size-xs);
+    }
+  }
+}

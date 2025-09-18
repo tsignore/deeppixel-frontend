@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f7f7f7;
+  --foreground: #171717;
+  --text-primary-color: #000000;
+  --text-secondary-color: #585858;
+  --blur-color: #00000009;
+  --font-size-xs: 0.625rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --stroke-color: #dedede;
+  --text-dark-blue-color: #08304c;
+  --text-blue-color: #526e82;
+  --white-color: #fff;
+  --button-rainbow-color: #2c2c2c;
+  --rainbow-gradient: linear-gradient(
+    90deg,
+    #26c0ff,
+    #e600c2,
+    #ff494e,
+    #ffa13e,
+    #ffc837,
+    #00cc3d
+  );
+  --rainbow-text-gradient: linear-gradient(
+    170.2deg,
+    #06acf1 20%,
+    #08304c 30%,
+    #e600c2 41%,
+    #08304c 41%,
+    #08304c 65%,
+    #ffc837 76%,
+    #00cc3d 82%
+  );
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-switzer), sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main-container {
+  height: 1160px;
+  max-width: 1536px;
+  margin: 20px auto;
+  border-radius: 30px;
+  background: linear-gradient(
+      to bottom,
+      rgba(3, 110, 167, 0) 0%,
+      rgba(3, 110, 167, 0.1) 30%,
+      rgba(3, 110, 167, 0.1) 70%,
+      rgba(3, 110, 167, 0) 100%
+    ),
+    url("@/shared/assets/images/rainbow-beams.png");
+  background-repeat: no-repeat;
+  background-size: 100% 1160px;
+  background-position: top;
+  border: 1px solid rgba(4, 91, 138, 0.1);
+  position: relative;
+}

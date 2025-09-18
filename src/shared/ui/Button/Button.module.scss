@@ -1,0 +1,151 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: var(--font-size-m);
+  font-weight: 500;
+}
+
+// =============================================== variants ================================================
+
+.clear {
+  background: transparent;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: var(--blur-color);
+  }
+}
+
+.outlined {
+  border: 1px solid currentcolor;
+  background: transparent;
+  &:hover {
+    background-color: var(--blur-color);
+  }
+}
+
+.filled {
+  color: white;
+  border: 1px solid transparent;
+}
+
+// =============================================== sizes ================================================
+
+.small {
+  padding: 8px 18px;
+  font-size: var(--font-size-s);
+}
+
+.medium {
+  padding: 16px 27px;
+  font-size: var(--font-size-s);
+}
+
+.large {
+  padding: 14px 27px;
+  font-size: var(--font-size-m);
+  font-weight: 600;
+}
+
+// =============================================== colors ================================================
+
+.clear.primary {
+  color: var(--primary-color);
+}
+
+.clear.secondary {
+  color: var(--secondary-color);
+}
+
+.clear.basic {
+  background-color: transparent;
+  color: var(--text-secondary-color);
+  &:hover {
+    background-color: var(--blur-color);
+  }
+}
+
+.filled.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.filled.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.filled.basic {
+  background-color: var(--text-primary-color);
+  color: var(--text-primary-color-inverted);
+}
+
+.outlined.primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.outlined.secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+// =============================================== disabled ================================================
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.clear.disabled {
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.outlined.disabled {
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+//
+
+.rainbow {
+  position: relative;
+  color: var(--button-rainbow-color);
+  background-color: var(--white-color) !important;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: var(--rainbow-gradient);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+.medium.rainbow {
+  font-weight: 700;
+  &::before {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 750px) {
+  .small {
+    padding: 8px 14px;
+  }
+}
