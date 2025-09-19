@@ -72,9 +72,10 @@ body {
 }
 
 .main-container {
-  height: 1160px;
+  position: relative;
   max-width: 1536px;
   margin: 20px auto;
+  padding-top: 30px;
   border-radius: 30px;
   background: linear-gradient(
       to bottom,
@@ -87,8 +88,19 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 1160px;
   background-position: top;
+}
+
+.main-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
   border: 1px solid rgba(4, 91, 138, 0.1);
-  position: relative;
+  pointer-events: none;
+  z-index: -1;
 }
 
 @media (max-width: 750px) {
@@ -98,8 +110,8 @@ body {
 
   .main-container {
     margin-top: 8px;
-
     background-size: 300% 1160px;
     background-position: top;
+    padding-top: 8px;
   }
 }
