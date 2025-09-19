@@ -213,31 +213,31 @@
 
 @media (max-width: 750px) {
   .decoration1 {
-    width: 10vw;
+    width: 14vw;
     height: auto;
     top: 8%;
     left: -5%;
   }
 
   .decoration2 {
-    width: 13vw;
+    width: 17vw;
     height: auto;
     top: 12%;
-    right: -5%;
+    right: -10%;
   }
 
   .decoration3 {
-    width: 25vw;
+    width: 30vw;
     height: auto;
     top: 70%;
-    left: -12%;
+    left: -20%;
   }
 
   .decoration4 {
-    width: 15vw;
+    width: 20vw;
     height: auto;
     top: 75%;
-    left: 0%;
+    left: -10%;
   }
 
   .decoration5 {
@@ -255,6 +255,10 @@
   .HeroSection {
     padding-top: 35px;
     padding-bottom: 150px;
+  }
+
+  .HeroSectionContent {
+    max-width: 550px;
   }
 
   .topLine {

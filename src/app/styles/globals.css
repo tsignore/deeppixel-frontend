@@ -30,7 +30,7 @@
     #00cc3d
   );
   --rainbow-text-gradient: linear-gradient(
-    170.2deg,
+    160.2deg,
     #06acf1 20%,
     #08304c 30%,
     #e600c2 41%,
@@ -84,4 +84,14 @@ body {
   background-position: top;
   border: 1px solid rgba(4, 91, 138, 0.1);
   position: relative;
+}
+
+@media (max-width: 750px) {
+  body {
+    padding: 0 8px;
+  }
+
+  .main-container {
+    margin-top: 8px;
+  }
 }
