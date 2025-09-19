@@ -16,6 +16,7 @@ body {
   --foreground: #171717;
   --text-primary-color: #000000;
   --text-secondary-color: #585858;
+  --primary-color: #ff1b82;
   --blur-color: #00000009;
   --font-size-xs: 0.625rem;
   --font-size-s: 0.875rem;
@@ -71,6 +72,11 @@ body {
   position: relative;
 }
 
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
 .main-container {
   position: relative;
   max-width: 1536px;
@@ -115,4 +121,10 @@ body {
     background-position: top;
     padding-top: 8px;
   }
+}
+
+:focus-visible {
+  outline: none; /* убираем дефолт */
+  box-shadow: 0 0 0 2px var(--primary-color);
+  border-radius: 6px; /* можно чтобы красиво скруглялось */
 }
