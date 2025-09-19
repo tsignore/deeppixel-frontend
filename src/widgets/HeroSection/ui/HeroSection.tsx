@@ -31,13 +31,6 @@ export const HeroSection = () => {
     <section className={clsx(styles.HeroSection)}>
       <Container>
         <div className={styles.HeroSectionContent}>
-          {/* <div className={styles.topLine}>
-            <p>
-              <strong>AI Image Generator:</strong> Create Unique AI Art with
-              Free AI Image Generator
-            </p>
-            <Image src={AngrySmileBlackImage} alt="Angry Smile Icon" />
-          </div> */}
           <WhiteLine
             image={<Image src={AngrySmileBlackImage} alt="Angry Smile Icon" />}
           >

@@ -5,7 +5,6 @@
   justify-content: center;
   padding-top: 120px;
   padding-bottom: 180px;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -279,12 +278,14 @@
 
   .text {
     font-size: var(--font-size-s);
+    line-height: 155%;
   }
 
   .signup {
     min-width: auto;
     width: 100%;
     padding: 2px 12px 2px 12px;
+    margin-top: 45px;
 
     span {
       font-size: 1.25rem;
@@ -310,5 +311,11 @@
 
   .login {
     font-size: var(--font-size-s);
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    max-width: 350px;
   }
 }
