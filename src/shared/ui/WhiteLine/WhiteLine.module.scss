@@ -16,12 +16,21 @@
 @media (max-width: 750px) {
   .WhiteLine {
     padding: 6px 10px;
-    gap: 0px;
-    img {
-      display: none;
-    }
+
     p {
       font-size: var(--font-size-xs);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .WhiteLine {
+    width: 100%;
+    justify-content: center;
+    gap: 0px;
+
+    img {
+      display: none;
     }
   }
 }
