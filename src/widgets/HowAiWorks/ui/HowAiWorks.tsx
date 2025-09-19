@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { WhiteLine } from "@/shared/ui/WhiteLine/WhiteLine";
 import { Button } from "@/shared/ui/Button/Button";
 import { Container } from "@/shared/ui/Container/Container";
+import { SectionTitle } from "@/shared/ui/SectionTitle/SectionTitle";
 
 interface HowAiWorksProps {
   className?: string;
@@ -17,9 +18,9 @@ export const HowAiWorks: React.FC<HowAiWorksProps> = ({ className }) => {
           <WhiteLine className={styles.whiteLine}>
             Realistic AI Image Generator: Create Photorealistic Images with AI
           </WhiteLine>
-          <h2 className={styles.title}>
+          <SectionTitle className={styles.title}>
             How AI image generator free no <span>sign up works</span>
-          </h2>
+          </SectionTitle>
           <div className={styles.blocks}>
             <div className={styles.blocksItem}>
               <h3>01</h3>
